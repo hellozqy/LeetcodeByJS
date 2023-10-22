@@ -35,7 +35,7 @@ var lengthOfLongestSubstring = function (s) {
   while (r < s.length) {
     let a = s[r]
     if (w.has(a) && w.get(a) < l) l = w.get(a) + 1
-    max = Math.max(max, r - l +1)
+    max = Math.max(max, r - l + 1)
     w.set(a, r)
     r++
   }
